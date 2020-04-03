@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=GraphSearch
+comment0.text=\r\n\ @author\ Michael\ K.\ Tshimanga\r\n\ @version\ 3.30.2020\r\n
+comment1.params=graph
+comment1.target=GraphSearch(Graph)
+comment2.params=goal
+comment2.target=void\ DFSRec(java.lang.Object)
+comment3.params=start\ end
+comment3.target=void\ DFSRec(Graph.Node,\ Graph.Node)
+comment4.params=goal
+comment4.target=java.util.ArrayList\ DFSIter(java.lang.Object)
+comment5.params=start\ end
+comment5.target=java.util.ArrayList\ DFSIter(Graph.Node,\ Graph.Node)
+comment6.params=graph
+comment6.target=void\ BFTRec(Graph)
+comment7.params=vertex\ Q
+comment7.target=void\ BFTRec(Graph.Node,\ java.util.Queue)
+comment8.params=graph
+comment8.target=java.util.ArrayList\ BFTIter(Graph)
+numComments=9
