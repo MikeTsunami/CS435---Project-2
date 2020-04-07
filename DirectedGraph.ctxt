@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=DirectedGraph
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ DirectedGraph\ here.\r\n\r\n\ @author\ Michael\ K.\ Tshimanga\r\n\ @version\ 4.6.2020\r\n
+comment1.params=vertices
+comment1.target=DirectedGraph(java.lang.Object[])
+comment1.text=\r\n\ Public\ constructor\r\n\ @param\ vertices\ any\ amount\ of\ vertices\ you\ want\ to\ initially\ add\ to\ the\ graph\r\n
+comment2.params=arr\ nodeVal
+comment2.target=int\ count(java.lang.Object[],\ Graph.Node)
+comment3.params=nodeVal
+comment3.target=void\ addNode(Graph.Node)
+comment3.text=\r\n\ Method\ to\ add\ a\ new\ vertex\ to\ the\ graph\r\n\ @param\ nodeVal\ the\ new\ vertex\ to\ add\r\n
+comment4.params=first\ second
+comment4.target=void\ addDirectedEdge(Graph.Node,\ Graph.Node)
+comment5.params=first\ second
+comment5.target=void\ removeDirectedEdge(Graph.Node,\ Graph.Node)
+comment6.params=
+comment6.target=java.util.HashSet\ getAllNodes()
+comment7.params=
+comment7.target=int[][]\ getMatrix()
+numComments=8
