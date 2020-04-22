@@ -1,19 +1,45 @@
+import graph.*;
 import java.util.*;
 /**
  * @author Michael K. Tshimanga
- * @version 3.30.2020
+ * @version 4.20.2020
  */
 public class GraphSearch
 {
-    private final Graph<?> graph;
-    private Object[] visited;
+    private static int[] visited = new int[0];
     
-    public GraphSearch(Graph<?> graph) {
-        this.graph = graph;
-        visited = new Object[0];
+    public static ArrayList<Node<Integer>> DFSRec(final Node<Integer> start, final Node<Integer> end) {
+        Graph<Integer> graph = Main.createRandomUnweightedGraphIter(10);
+        graph.addNode(start.value.toString());
+        graph.addNode(end.value.toString());
+        graph.addUndirectedEdge(start, (Node<Integer>) graph.getAllNodes().toArray()[(new Random()).nextInt(graph.getAllNodes().size())]);
+        graph.addUndirectedEdge(end, (Node<Integer>) graph.getAllNodes().toArray()[(new Random()).nextInt(graph.getAllNodes().size())]);
+        if (!Arrays.asList(visited).contains(start.value.intValue()))
+            return null;
+        return null;
+    }
+    private static ArrayList<Node<Integer>> DFSHelper(final Node<Integer> start, final Node<Integer> end) {
+        return null;
     }
     
-    public <E> void DFSRec(E goal) {
+    public static ArrayList<Node<Integer>> DFSIter(final Node<Integer> start, final Node<Integer> end) {
+        return null;
+    }
+    
+    public static <E> ArrayList<Node<E>> BFTRec(final Graph<E> graph) {
+        return null;
+    }
+    
+    public static <E> ArrayList<Node<E>> BFTIter(final Graph<E> graph) {
+        return null;
+    }
+    
+    /** public GraphSearch(Graph<?> graph) {
+        this.graph = graph;
+        visited = new Object[0];
+    } **/
+    
+    /** public <E> void DFSRec(E goal) {
         visited = new Object[0];
         for (Object vertex : graph.getAllNodes().toArray())
             if (!Arrays.asList(visited).contains(vertex))
@@ -30,9 +56,12 @@ public class GraphSearch
                 if (graph.getMatrix()[Arrays.asList(graph.getAllNodes().toArray()).indexOf(start)][col] == 1)
                     if (!Arrays.asList(visited).contains(graph.getAllNodes().toArray()[col]))
                         DFSRec((Graph<E>.Node<E>) graph.getAllNodes().toArray()[col], end);
-    }
+    } **/
+    /** public static <E> void DFSRec(final Graph<E>.Node<E> start, final Graph<E>.Node<E> end) {
+        
+    } **/
     
-    public <E> ArrayList<Graph<E>.Node<E>> DFSIter(E goal) {
+    /** public <E> ArrayList<Graph<E>.Node<E>> DFSIter(E goal) {
         ArrayList<Graph<E>.Node<E>> list = null;
         visited = new Object[0];
         for (Object vertex : graph.getAllNodes().toArray())
@@ -115,5 +144,5 @@ public class GraphSearch
                 }
             }
         return list;
-    }
+    } **/
 }
